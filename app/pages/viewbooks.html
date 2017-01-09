@@ -1,0 +1,22 @@
+<div id="viewtable" ng-controller="booksController">
+    <table id="tablebooks" class="table" ng-model="x.book_id">
+        <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages</th>
+            <th>Genre</th>
+            <th>Publisher</th>
+            <th>Year</th>
+        </tr>
+        <tr ng-repeat="x in books">
+            <td>{{x.book_id}}</td>
+            <td>{{x.title}}</td>
+            <td>{{x.author}}</td>
+            <td>{{x.pages}}</td>
+            <td>{{x.genre}}</td>
+            <td>{{x.publisher}}</td>
+            <td>{{x.year}}</td>
+        </tr>
+    </table>
+</div>

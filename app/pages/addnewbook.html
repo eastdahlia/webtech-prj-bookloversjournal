@@ -1,0 +1,38 @@
+<div>
+	<h1>Add a new book</h1>
+	<div class="form-group">
+		<form action="/books/" method="post" name="addForm">
+			<label for="title">Title</label>
+			<input type="text" class="form-control" id="title" name="title" ng-model="title" required/>
+			<p><span ng-show="addForm.title.$touched && addForm.title.$invalid">The title is required.</span></p>
+			<label for="author">Author</label>
+			<input type="text" class="form-control" id="author" name="author" ng-model="author" required/>
+			<p><span ng-show="addForm.author.$touched && addForm.author.$invalid">The author is required.</span></p>
+			<label for="genre">Genre</label>
+			<select class="form-control" id="genre" name="genre">
+				<option>Fiction</option>
+				<option>Comedy</option>
+				<option>Drama</option>
+				<option>Horror</option>
+				<option>Non-fiction</option>
+				<option>Realistic Fiction</option>
+				<option>Romance Novel</option>
+				<option>Satire</option>
+				<option>Tragedy</option>
+				<option>Tragicomedy</option>
+				<option>Fantasy</option>
+				<option>Philosophy</option>
+				<option>Science</option>
+				<option>Essay</option>
+			</select>
+
+			<label for="year">Year</label>
+			<input type="text" class="form-control" id="year" name="year" ng-model="val" numbers-only></select>
+			<label for="pages">Pages</label>
+			<input class="form-control" type="text" id="pages" name="pages" onkeypress='return (event.charCode >= 48 && event.charCode <= 57) ||(event.charCode <31)'>
+			<label for="publisher">Publisher</label>
+			<input type="text" class="form-control" id="publisher" name="publisher" />
+			<input type="submit" value="Add" />
+		</form>
+	</div>
+</div>

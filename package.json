@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "angular-route": "^1.6.1",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "mysql": "^2.12.0",
+    "nodeadmin": "^0.1.2",
+    "sequelize": "^3.25.0",
+    "swaggerize-ui": "^1.0.1"
+  }
+}

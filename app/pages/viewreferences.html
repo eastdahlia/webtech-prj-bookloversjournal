@@ -1,0 +1,21 @@
+<div id="viewtable" ng-controller="viewReferenceController">
+    <select size="6" class="form-control" ng-model="r.bookId" required>
+<option ng-repeat="x in books" value="{{x.book_id}}">{{x.title}} by {{x.author}}</option>
+                    	</select>
+                    	<br><br>
+    <button class="btn btn-info" ng-click="showTable()">View References <span class="glyphicon glyphicon-th-large"></span></button>
+    <div id="tableShowReferences">
+            <table class="table">
+        <tr>
+            <th>Reference</th>
+            <th>Explanation</th>
+            <th>Link</th>
+        </tr>
+        <tr ng-repeat="r in references">
+            <td>{{r.name}}</td>
+            <td>{{r.explanation}}</td>
+            <td>{{r.link}}</td>
+        </tr>
+    </table>
+    </div>
+</div>

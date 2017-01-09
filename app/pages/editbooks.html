@@ -1,0 +1,29 @@
+<div>
+    <select size="6" class="form-control" id="bookViewer" ng-model="x.book_id" required>
+<option ng-repeat="x in books" value="{{x.book_id}}">{{x.title}} by {{x.author}}</option>
+                    	</select>
+    <br><br>
+    <button class="btn btn-info" ng-click="addNewReference()">Add references <span class="glyphicon glyphicon-ok-sign"></span></button>
+    <button class="btn btn-info" ng-click="changeName()">Change name <span class="glyphicon glyphicon-book"></span></button>
+
+    <div id="formReference">
+        <form action="/references/" method="post">
+            <label for="referenceId">Id</label>
+            <input type="text" class="form-control" name="BookBookId" id="bookIdReference" readonly/>
+            <label for="referenceName">Name</label>
+            <input type="text" class="form-control" id="referenceName" name="name" />
+            <label for="referenceExplanation">Explanation</label>
+            <textarea class="form-control" id="referenceExplanation" height="150px" name="explanation"></textarea>
+            <label for="referenceLink">Link</label>
+            <input type="text" class="form-control" id="referenceLink" name="link" />
+            <input type="submit" value="Add" />
+        </form>
+    </div>
+    <div id="formChangeName">
+        <form>
+            <label for="title">Title</label>
+            <input type="text" class="form-control" name="title" ng-model="bookEdit.title" />
+            <button ng-click="changeNameDatabase()">Change</button>
+        </form>
+    </div>
+</div>
