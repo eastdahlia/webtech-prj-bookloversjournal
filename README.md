@@ -4,11 +4,6 @@ Book Lover's Journal este un asistent pentru pasionații de lectură. Cum orice 
 
 Aplicația are următoarele funcționalități:
   - introducerea unei cărți noi
-  - introducerea unor citate
-  - introducerea unor opinii
-  - vocabular
-  - referințe, curiozități (de exp: numele unui pictor, alt autor care nu îmi este cunoscut)
-  - rating
+  - referințe, curiozități (de exp: numele unui pictor, alt autor care nu îmi este cunoscut,citate,opinii,vocabular)
   - vizualizare cărți citite
-  - stabilire de goal-uri (exp: număr cărți citite)
-  - statistici (exp: nr cărți)
+  - ștergerea unei cărți
